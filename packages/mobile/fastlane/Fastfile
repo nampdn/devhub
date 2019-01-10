@@ -13,7 +13,7 @@ platform :ios do
 	end
 
 	lane :build do
-  	match(app_identifier: 'com.devonapp', type: 'development', readonly: true)
+    certificates
 		build_app(
       project: "./ios/devhub.xcodeproj",
       scheme: "devhub",
