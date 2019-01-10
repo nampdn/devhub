@@ -1,0 +1,29 @@
+before_all do
+  ensure_git_branch
+  ensure_git_status_clean
+  git_pull
+end
+
+platform :ios do
+  # iOS Lane
+	desc 'Fetch certificates and provisioning profiles'
+	lane :certificates do
+		match(app_identifier: 'com.devonapp', type: 'development', readonly: true)
+		match(app_identifier: 'com.devonapp', type: 'appstore', readonly: true)
+	end
+
+	lane :build do
+  	match(app_identifier: 'com.devonapp', type: 'development', readonly: true)
+		build_app(
+      project: "./ios/devhub.xcodeproj",
+      scheme: "devhub",
+      output_directory: "./fastlane"
+    )
+	end
+
+end
+
+platform :android do
+  # Android Lanes
+end
+

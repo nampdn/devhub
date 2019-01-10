@@ -952,8 +952,8 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = JNXGJS86YQ;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = R2C7Q9VC6C;
+						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1636,10 +1636,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = JNXGJS86YQ;
+				DEVELOPMENT_TEAM = R2C7Q9VC6C;
 				ENTRY_FILE = packages/mobile/index;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)/**",
@@ -1661,9 +1661,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.devhubapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devonapp;
 				PRODUCT_NAME = devhub;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.devonapp";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1674,10 +1674,10 @@
 			baseConfigurationReference = C1520CE5C137943E997C36CD /* Pods-devhub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JNXGJS86YQ;
+				DEVELOPMENT_TEAM = R2C7Q9VC6C;
 				ENTRY_FILE = packages/mobile/index;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)/**",
@@ -1699,9 +1699,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.devhubapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devonapp;
 				PRODUCT_NAME = devhub;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.devonapp";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
