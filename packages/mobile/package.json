@@ -13,7 +13,7 @@
     "test": "jest",
     "tsc": "tsc -b",
     "xcode": "open ios/devhub.xcworkspace",
-		"build": "fastlane ios build"
+    "build": "bundle exec fastlane ios build"
   },
   "dependencies": {
     "@devhub/components": "0.43.0",
