@@ -35,6 +35,7 @@ script:
       yarn workspace @devhub/desktop build:skipweb --mac
       now --token $NOW_TOKEN
       now alias --token $NOW_TOKEN
+      yarn workspace @devhub/mobile build
     fi
 
 before_cache:
