@@ -8,8 +8,8 @@ platform :ios do
   # iOS Lane
 	desc 'Fetch certificates and provisioning profiles'
 	lane :certificates do
-		match(giturl: 'https://github.com/nampdn/certificates_devhub.git', app_identifier: 'com.devonapp', type: 'development', readonly: true)
-		match(giturl: 'https://github.com/nampdn/certificates_devhub.git', app_identifier: 'com.devonapp', type: 'appstore', readonly: true)
+		match(git_url: 'https://github.com/nampdn/certificates_devhub.git', app_identifier: 'com.devonapp', type: 'development', readonly: true)
+		match(git_url: 'https://github.com/nampdn/certificates_devhub.git', app_identifier: 'com.devonapp', type: 'appstore', readonly: true)
 	end
 
 	lane :build do
