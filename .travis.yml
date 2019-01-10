@@ -31,11 +31,11 @@ script:
     else
       yarn --link-duplicates --pure-lockfile
       yarn clean
+      brew cask install fastlane && yarn workspace @devhub/mobile build
       yarn workspace @devhub/web build
       yarn workspace @devhub/desktop build:skipweb --mac
       now --token $NOW_TOKEN
       now alias --token $NOW_TOKEN
-      yarn workspace @devhub/mobile build
     fi
 
 before_cache:
