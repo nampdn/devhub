@@ -17,6 +17,7 @@ cache:
     - node_modules
     - $HOME/.cache/electron
     - $HOME/.cache/electron-builder
+    - $HOME/.rvm/gems
 
 script:
   - |
@@ -31,7 +32,7 @@ script:
     else
       yarn --link-duplicates --pure-lockfile
       yarn clean
-      gem install fastlane -NV && yarn workspace @devhub/mobile build
+      gem install fastlane dotenv -NV && yarn workspace @devhub/mobile build
       yarn workspace @devhub/web build
       yarn workspace @devhub/desktop build:skipweb --mac
       now --token $NOW_TOKEN
