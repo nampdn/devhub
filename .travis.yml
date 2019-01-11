@@ -32,7 +32,7 @@ script:
     else
       yarn --link-duplicates --pure-lockfile
       yarn clean
-      gem install fastlane dotenv -NV && yarn workspace @devhub/mobile build
+      bundle install --deployment --quiet && yarn workspace @devhub/mobile build
       yarn workspace @devhub/web build
       yarn workspace @devhub/desktop build:skipweb --mac
       now --token $NOW_TOKEN
